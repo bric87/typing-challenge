@@ -173,6 +173,7 @@ function displayClock (){
         document.removeEventListener('keypress', checkAndUpdate)
         startButton.textContent = 'Try Again';
         startButton.removeAttribute('disabled');
+        startButton.classList.remove('disabled');
     }
 }
 
@@ -187,6 +188,7 @@ function startInterval(){
     wpmDiv.textContent = '0';
     //startButton.removeEventListener('click', startInterval);
     startButton.setAttribute('disabled','');
+    startButton.classList.add('disabled');
     mistakes = 0;
     correctKeyStrokes=0;
     getRandomSentence();

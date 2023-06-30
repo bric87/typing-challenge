@@ -80,8 +80,14 @@ h1{
     background-color: blueviolet;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 #start:hover{
     background-color: rgb(153, 62, 238);
+}
+
+#start.disabled{
+    background-color: rgb(225, 214, 235);
+    cursor:default;
 }
